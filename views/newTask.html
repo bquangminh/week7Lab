@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>
+        <a href="/"> Home</a>
+        <a href="/deleteAll"> Delete All Completed Tasks</a>
+        <a href="/newDeveloper"> Add a new Developer</a>
+        <a href="/listDeveloper"> List all Developers</a>
+        <a href="/newTask"> Add new Task</a>
+        <a href="/listTask"> List all Tasks</a>
+        <a href="/updateTask"> Update Task</a>
+        <a href="/deleteTaskID"> Delete Task By ID</a>
+    </h1>
+    <form action="/newTask" method="POST">
+        <h1>
+            <a href="/"> Home</a>
+            <a href="/listTask"> List Task</a>
+        </h1>
+        Task Name: <input type="text" name="taskname" />
+        <br />
+        Assign To: <input type="text" name="assignto" />
+        <br />
+        Task Due: <input type="text" name="taskdue" />
+        <br />
+        Task Status <select name="taskstatus">
+            <option value="Choose">Choose</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Complete">Complete</option>
+        </select>
+        <br />
+        Task Desc <input type="text" name="taskdesc" />
+        <br />
+        <button>Submit</button>
+    </form>
+
+</body>
+
+</html>

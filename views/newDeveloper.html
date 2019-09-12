@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>
+        <a href="/"> Home</a>
+        <a href="/deleteAll"> Delete All Completed Tasks</a>
+        <a href="/newDeveloper"> Add a new Developer</a>
+        <a href="/listDeveloper"> List all Developers</a>
+        <a href="/newTask"> Add new Task</a>
+        <a href="/listTask"> List all Tasks</a>
+        <a href="/updateTask"> Update Task</a>
+        <a href="/deleteTaskID"> Delete Task By ID</a>
+    </h1>
+    <h1> Add new Developer</h1>
+
+    <form action="/newDeveloper" method="POST">
+        First Name <input type="text" name='fname' />
+        Last Name <input type="text" name="lname" />
+        <br />
+        Level <input type="text" name="level" /> <br />
+        Address <br />
+        State <input type="text" name="state" /> Suburb <input type="text" name="suburb" />
+        <br />
+        Street <input type="text" name="street" /> Unit <input type="text" name="unit" />
+        <br />
+        <button>Submit</button>
+    </form>
+</body>
+
+</html>
